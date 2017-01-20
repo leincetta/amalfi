@@ -8,21 +8,28 @@
 <h2 class="home-section">Projects</h2>
 
 <!-- Work loop -->
-<?php query_posts('showposts=1'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php query_posts('showposts=5'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<p class="date"><?php the_date( 'F j, Y' ); ?></p>
+  <div class="section-plus">
+    <p class="date">
+    	<?php the_date( 'F Y' ); ?>
+    </p>
+  </div>
 
 <h3 class="list-heading">
 	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 </h3>
 
-<p><?php echo strip_tags( get_the_excerpt() ); ?></p>
+<p>
+  <!-- <?php echo strip_tags( get_the_excerpt() ); ?> -->
+  <?php the_field('project_subtitle'); ?>
+</p>
 
-<?php if(get_the_post_thumbnail() ) : ?>
+<!-- <?php if(get_the_post_thumbnail() ) : ?>
 	<a href="<?php the_permalink(); ?>">
 		<?php the_post_thumbnail(); ?>
 	</a>
-<?php endif; ?>
+<?php endif; ?> -->
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
 

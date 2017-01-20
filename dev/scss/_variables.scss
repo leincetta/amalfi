@@ -1,8 +1,33 @@
+// Font families
+
+$SansSerif: "Helvetica Neue","Helvetica","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",arial,sans-serif;
+$Serif: Georgia,Cambria,"Times New Roman",Times,serif;
+$Code: Consolas, monaco, monospace;
+
 // From darker to lighter
 $Color01: rgba(0,0,0,0.8);
 $Color02: rgba(0,0,0,0.44);
 $ColorLink: #005689;
 
-$SansSerif: "Helvetica Neue","Helvetica","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",arial,sans-serif;
-$Serif: Georgia,Cambria,"Times New Roman",Times,serif;
-$Code: Consolas, monaco, monospace;
+// http://materializecss.com/color.html
+// lighten-4
+
+.blue-grey   { background-color: #cfd8dc }
+.grey        { background-color: #f5f5f5 }
+.brown       { background-color: #d7ccc8 }
+.deep-orange { background-color: #ffccbc }
+.orange      { background-color: #ffe0b2 }
+.amber       { background-color: #ffecb3 }
+.yellow      { background-color: #fff9c4 }
+.lime        { background-color: #f0f4c3 }
+.light-green { background-color: #dcedc8 }
+.green       { background-color: #c8e6c9 }
+.teal        { background-color: #b2dfdb }
+.cyan        { background-color: #b2ebf2 }
+.light-blue  { background-color: #b3e5fc }
+.blue        { background-color: #bbdefb }
+.indigo      { background-color: #c5cae9 }
+.deep-purple { background-color: #d1c4e9 }
+.purple      { background-color: #e1bee7 }
+.pink        { background-color: #f8bbd0 }
+.red         { background-color: #ffcdd2 }

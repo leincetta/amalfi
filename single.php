@@ -2,7 +2,7 @@
 
 <h1 class="heading-first">
 	<?php the_title(); ?><br>
-	<small>This is the subtitle</small>
+	<small><?php the_field('project_subtitle'); ?></small>
 </h1>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
