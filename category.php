@@ -14,7 +14,7 @@
 </div>
 
   <h3 class="list-heading">
-    <?php the_title(); ?>
+    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </h3>
 
   <p>
