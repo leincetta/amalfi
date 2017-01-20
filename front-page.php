@@ -12,7 +12,7 @@
 
   <div class="section-plus">
     <p class="date">
-    	<?php the_date( 'F Y' ); ?>
+    	<?php the_date( 'M Y' ); ?>
     </p>
   </div>
 
