@@ -49,6 +49,4 @@
 
 <p>I am passionate about finding ways to improve communications and empathy through design. My collaborations with cross-functional teams dispersed around the globe have given me unique insight into how design can bridge cultural gaps.</p>
 
-<p><a href="#">More about me</a></p>
-
 <?php get_footer(); ?>
