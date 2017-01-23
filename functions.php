@@ -10,6 +10,15 @@ function amalfi_theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'amalfi_theme_styles' );
 
+// remove wp version param from any enqueued scripts
+function vc_remove_wp_ver_css_js( $src ) {
+    if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) )
+        $src = remove_query_arg( 'ver', $src );
+    return $src;
+}
+add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+
 
 // Add JS
 function amalfi_theme_js() {
@@ -28,8 +37,8 @@ add_action( 'wp_enqueue_scripts', 'amalfi_theme_js' );
 function amalfi_create_widget( $name, $id, $description ) {
 
 	register_sidebar(array(
-		'name' => __( $name ),	 
-		'id' => $id, 
+		'name' => __( $name ),
+		'id' => $id,
 		'description' => __( $description ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
@@ -47,7 +56,7 @@ amalfi_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in 
 add_theme_support( 'post-thumbnails' );
 
 
-// Set maximum width for images 
+// Set maximum width for images
 update_option('thumbnail_size_w', 700);
 
 
@@ -56,7 +65,7 @@ function amalfi_remove_default_image_sizes( $sizes) {
 
     unset( $sizes['medium']);
     unset( $sizes['large']);
-     
+
     return $sizes;
 }
 
