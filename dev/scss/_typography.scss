@@ -48,11 +48,6 @@ h2,
   color: $Color02;
 }
 
-h2,
-h3 {
-  font-weight: 400;
-}
-
 p, ul, li {
 	font-family: $Serif;
 	letter-spacing: .01rem;
@@ -69,6 +64,7 @@ p, ul, li {
 		color: $ColorLink;
 		&:hover {
 			border-bottom: 1px solid $ColorLink;
+      text-decoration: none;
 		}
 	}
 }

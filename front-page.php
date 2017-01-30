@@ -1,3 +1,8 @@
+<?php
+/*
+	Template Name: Homepage
+*/
+?>
 <?php get_header(); ?>
 
 <h1 class="heading-first">
@@ -7,29 +12,25 @@
 
 <h2 class="home-section">Projects</h2>
 
-<!-- Work loop -->
-<?php query_posts('showposts=5'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php
+  $query = new WP_Query( array( 'category_name' => 'projects', 'posts_per_page' => 3 ) );
+?>
+
+<?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
   <div class="section-plus">
     <p class="date">
-    	<?php the_date( 'M Y' ); ?>
+      <?php the_date( 'M Y' ); ?>
     </p>
   </div>
 
-<h3 class="list-heading">
-	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-</h3>
+  <h3 class="list-heading">
+  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+  </h3>
 
-<p>
-  <!-- <?php echo strip_tags( get_the_excerpt() ); ?> -->
+  <p>
   <?php the_field('project_subtitle'); ?>
-</p>
-
-<!-- <?php if(get_the_post_thumbnail() ) : ?>
-	<a href="<?php the_permalink(); ?>">
-		<?php the_post_thumbnail(); ?>
-	</a>
-<?php endif; ?> -->
+  </p>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
 
@@ -40,13 +41,16 @@
 ?>
 <p><a href="<?php echo esc_url( $category_link ); ?>" title="Projects">Browse all projects</a></p>
 
-<!-- Work loop end -->
 
 <!-- About -->
 <h2 class="home-section">About</h2>
 
-<p>I have specialized in design for websites and apps since 2008. Since then I have been continuously learning new technologies with a focus on user experience, communication theory, and the understanding of human behavior.</p>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<p>I am passionate about finding ways to improve communications and empathy through design. My collaborations with cross-functional teams dispersed around the globe have given me unique insight into how design can bridge cultural gaps.</p>
+	<?php the_content(); ?>
+
+<?php endwhile; endif; wp_reset_postdata(); ?>
+
+<!-- <?php the_content(); ?> -->
 
 <?php get_footer(); ?>
