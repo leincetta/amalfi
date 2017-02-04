@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <!-- <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title> -->
+        <meta name="google-site-verification" content="fdR0a1FtG3g3A3uSX03Hhg19XtCpMHLdpGqqu7OXYW4" />
         <title><?php wp_title(''); ?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,7 +46,7 @@
                 <a class="logo" href="<?php bloginfo('url'); ?>">
                     <img alt="<?php bloginfo('name'); ?>" src="<?php bloginfo('template_directory'); ?>/images/leandro-incetta-logo.svg" />
                 </a>
-                
+
                 <!-- Display Menu -->
                 <?php wp_nav_menu(); ?>
             </div>
@@ -54,6 +54,3 @@
         </header>
 
         <div class="container">
-
-        
-        
