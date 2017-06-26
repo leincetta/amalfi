@@ -1,0 +1,26 @@
+.row {
+  clear: both;
+}
+.thumbnail, .excerpt {
+  float: left;
+}
+
+.row {}
+.thumbnail {
+  margin-left: 20px;
+}
+.excerpt {
+  width: calc(100% - 170px);
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 580px) {
+    .excerpt {
+      .subtitle {
+        display: none;
+      }
+    }
+}

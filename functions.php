@@ -55,21 +55,9 @@ amalfi_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in 
 // Add support for featured images
 add_theme_support( 'post-thumbnails' );
 
-
-// Set maximum width for images
-update_option('thumbnail_size_w', 700);
-
-
-// Disable medium and full size uploads
-function amalfi_remove_default_image_sizes( $sizes) {
-
-    unset( $sizes['medium']);
-    unset( $sizes['large']);
-
-    return $sizes;
-}
-
-add_filter('intermediate_image_sizes_advanced', 'amalfi_remove_default_image_sizes');
+set_post_thumbnail_size( 150, 150, array( 'top', 'top') );
+update_option('thumbnail_size_w', 150);
+update_option('thumbnail_size_h', 150);
 
 
 // Remove Default Image Link

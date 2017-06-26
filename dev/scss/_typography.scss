@@ -36,7 +36,6 @@ h2,
 .heading-first small {
 	font-family: $SansSerif;
 	letter-spacing: -0.02em;
-	font-weight: 400;
 	font-style: normal;
 	font-size: 25px;
 	line-height: 1.22;
@@ -93,7 +92,7 @@ pre {
 }
 
 blockquote p {
-  font-family: $Serif;
+  font-family: $SansSerif;
   font-weight: 300;
   font-size: 28px;
   margin-left: -1.75px;

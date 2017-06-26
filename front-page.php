@@ -10,7 +10,7 @@
 	<small><?php echo get_bloginfo ( 'description' );  ?></small>
 </h1>
 
-<h2 class="home-section">Projects</h2>
+<h2>Projects</h2>
 
 <?php
   $query = new WP_Query( array( 'category_name' => 'projects', 'posts_per_page' => 3 ) );
@@ -18,33 +18,27 @@
 
 <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-  <div class="section-plus">
+  <!-- <div class="section-plus">
     <p class="date">
       <?php the_date( 'M Y' ); ?>
     </p>
-  </div>
+  </div> -->
 
-  <h3 class="list-heading">
-  <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-  </h3>
-
-  <p>
-  <?php the_field('project_subtitle'); ?>
-  </p>
+<?php get_template_part('/includes/post-preview'); ?>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
+
+<div class="clear"></div>
 
 <!-- Link to category -->
 <?php
   $category_id = get_cat_ID( 'Projects' );
   $category_link = get_category_link( $category_id );
 ?>
-<p><a href="<?php echo esc_url( $category_link ); ?>" title="Projects">Browse all projects</a></p>
+<p><a href="<?php echo esc_url( $category_link ); ?>" title="Projects">Browse all <?php echo wp_count_posts()->publish; ?> projects</a></p>
 
 
 <!-- About -->
-<h2 class="home-section">About</h2>
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<?php the_content(); ?>
