@@ -6,9 +6,11 @@
 }
 
 .row {}
+
 .thumbnail {
   margin-left: 20px;
 }
+
 .excerpt {
   width: calc(100% - 170px);
 }
@@ -23,4 +25,20 @@
         display: none;
       }
     }
+}
+
+// Shadows
+
+.size-thumbnail {
+  box-shadow: $Shadow2;
+  &:hover {
+    box-shadow: $Shadow1;
+  }
+}
+
+p img {
+  box-shadow: $Shadow3;
+  &:hover {
+    box-shadow: $Shadow2;
+  }
 }
