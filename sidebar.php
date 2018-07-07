@@ -15,11 +15,6 @@
 		</a>
 	</li>
 	<li>
-		<a href="https://github.com/leincetta" target="_blank">
-			<img alt="GitHub" src="<?php bloginfo('template_directory'); ?>/images/social-github.svg" />
-		</a>
-	</li>
-	<li>
 		<a href="https://leandroincetta.tumblr.com" target="_blank">
 			<img alt="Tumblr" src="<?php bloginfo('template_directory'); ?>/images/social-tumblr.svg" />
 		</a>
