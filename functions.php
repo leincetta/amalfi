@@ -94,4 +94,7 @@ function register_theme_menus() {
 add_action( 'init', 'register_theme_menus' );
 
 
+// Remove p tags from category description
+remove_filter('term_description','wpautop');
+
 ?>
