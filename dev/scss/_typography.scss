@@ -94,7 +94,7 @@ pre {
 blockquote p {
   font-family: $SansSerif;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 25px;
   margin-left: -1.75px;
   line-height: 1.48;
   letter-spacing: -.014em;
@@ -117,9 +117,10 @@ a {
   }
 }
 
-// Display date
+// Small text: Date and captions
 
-.date {
+.date,
+.wp-caption-text {
 	letter-spacing: 0;
 	font-weight: 400;
 	font-style: normal;
@@ -127,6 +128,11 @@ a {
 	color: $Color02;
 	font-family: $SansSerif;
 	line-height: 1.58;
+}
+
+.wp-caption-text {
+  text-align: center;
+      margin-bottom: 18px;
 }
 
 // Headings shown after the date
@@ -143,12 +149,6 @@ a {
 .home-section {
 	margin: 60px 0;
 	font-size: 28px;
-}
-
-//
-
-.section-plus {
-	float: right;
 }
 
 //

@@ -18,12 +18,6 @@
 
 <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-  <!-- <div class="section-plus">
-    <p class="date">
-      <?php the_date( 'M Y' ); ?>
-    </p>
-  </div> -->
-
 <?php get_template_part('/includes/post-preview'); ?>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
