@@ -32,19 +32,41 @@ h1 {
 	margin-top: 0;
 }
 
+h2 {
+  margin-top: 58px;
+}
+
+h3 {
+  margin-top: 29px;
+}
+
 h2,
-.heading-first small {
+.heading-first small,
+#jp-relatedposts h3.jp-relatedposts-headline {
 	font-family: $SansSerif;
 	letter-spacing: -0.02em;
 	font-style: normal;
 	font-size: 25px;
 	line-height: 1.22;
 	letter-spacing: -0.022em;
-	margin-top: 58px;
+}
+
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+  border-top: 2px solid rgba(0,0,0,.2);
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+  font-family: $SansSerif;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+  font-weight: 700;
 }
 
 .heading-first small {
   color: $Color02;
+  display: block;
+  margin-top: 9px;
 }
 
 p, ul, li {
