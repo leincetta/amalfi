@@ -15,7 +15,6 @@ h6 {
 }
 
 h1 {
-  font-weight: normal;
 	font-style: normal;
 	font-size: 36px;
 	line-height: 1.15;
@@ -58,7 +57,6 @@ h2,
 p, ul, li {
 	font-family: $SansSerif;
 	letter-spacing: .01rem;
-	font-weight: 400;
 	font-style: normal;
 	font-size: 18px;
 	line-height: 1.58;
@@ -90,7 +88,6 @@ pre {
 	font-family: $Code;
 	background: $Color01;
 	color: #fff;
-	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.58;
@@ -101,7 +98,6 @@ pre {
 
 blockquote p {
   font-family: $SansSerif;
-  font-weight: 300;
   font-size: 25px;
   margin-left: -1.75px;
   line-height: 1.48;
@@ -130,7 +126,6 @@ a {
 .date,
 .wp-caption-text {
 	letter-spacing: 0;
-	font-weight: 400;
 	font-style: normal;
 	font-size: 14px;
 	color: $Color02;
@@ -162,7 +157,6 @@ a {
 //
 
 .heading-excerpt {
-	font-weight: 400;
 	font-style: normal;
 	font-size: 36px;
 	line-height: 1.15;
