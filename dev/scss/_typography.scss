@@ -15,19 +15,18 @@ h6 {
 }
 
 h1 {
-	font-weight: 700;
+  font-weight: normal;
 	font-style: normal;
 	font-size: 36px;
 	line-height: 1.15;
-	letter-spacing: -0.02em;
+	// letter-spacing: -0.02em;
 }
 
 .heading-first {
-	font-weight: 700;
 	font-style: normal;
 	font-size: 33px;
 	line-height: 1.15;
-	letter-spacing: -0.02em;
+	// letter-spacing: -0.02em;
 	margin-bottom: 3em;
 	margin-top: 0;
 }
@@ -41,31 +40,14 @@ h3 {
 }
 
 h2,
-.heading-first small,
-#jp-relatedposts h3.jp-relatedposts-headline {
+.heading-first small {
 	font-family: $SansSerif;
 	letter-spacing: -0.02em;
 	font-style: normal;
 	font-size: 25px;
 	line-height: 1.22;
-	letter-spacing: -0.022em;
+	// letter-spacing: -0.022em;
 }
-
-// Related posts
-
-#jp-relatedposts h3.jp-relatedposts-headline em:before {
-  border-top: 2px solid rgba(0,0,0,.2);
-}
-
-#jp-relatedposts .jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
-  font-family: $SansSerif;
-}
-
-#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
-  font-weight: 700;
-}
-
-//
 
 .heading-first small {
   color: $Color02;
@@ -74,13 +56,13 @@ h2,
 }
 
 p, ul, li {
-	font-family: $Serif;
+	font-family: $SansSerif;
 	letter-spacing: .01rem;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 18px;
 	line-height: 1.58;
-	letter-spacing: -0.003em;
+	// letter-spacing: -0.003em;
 	color: $Color01;
 	margin-top: 0;
 	& a {
@@ -112,7 +94,7 @@ pre {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.58;
-	letter-spacing: -0.003em;
+	// letter-spacing: -0.003em;
 	overflow-x: auto;
 	padding: 18px;
 }
@@ -123,7 +105,7 @@ blockquote p {
   font-size: 25px;
   margin-left: -1.75px;
   line-height: 1.48;
-  letter-spacing: -.014em;
+  // letter-spacing: -.014em;
   color: $Color02;
   cite {
     &::before{
