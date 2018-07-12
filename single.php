@@ -9,6 +9,8 @@
 
 <?php the_post_thumbnail('full');?>
 
+<p><?php the_time('F, Y') ?>. <br><?php the_tags( '',', ','.' ); ?></p>
+
 <?php the_content(); ?>
 
 <?php endwhile; endif; ?>
